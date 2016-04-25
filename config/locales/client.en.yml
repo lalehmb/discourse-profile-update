@@ -1,0 +1,10 @@
+en:
+    js:
+      padpors:
+        suggest:
+          bio: "write something about yourself"
+          bio-btn: "add bio"
+          avatar: "please upload an avatar!"
+          avatar-btn: "upload"
+          profile: "please update your profile"
+          profile-btn: "update"

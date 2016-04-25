@@ -1,0 +1,37 @@
+{{#if currentUser}}
+  {{#if currentUser.name}}
+    {{#if currentUser.hasAvatar}}
+      {{#if currentUser.hasBio}}
+      {{else}}
+        <div class='extra-suggests'>
+          <div class="profile-fix">
+            {{i18n 'padpors.suggest.bio'}}
+            <a href='/users/{{currentUser.username}}/preferences' class='btn btn-primary btn-small'>
+              {{i18n 'padpors.suggest.bio-btn'}}</a>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      {{/if}}
+    {{else}}
+      <div class='extra-suggests'>
+        <div class="profile-fix">
+          {{i18n 'padpors.suggest.avatar'}}
+          <a href='/users/{{currentUser.username}}/preferences' class='btn btn-primary btn-small'>
+          {{i18n 'padpors.suggest.avatar-btn'}}
+          </a>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    {{/if}}
+  {{else}}
+    <div class='extra-suggests'>
+      <div class="profile-fix">
+        {{i18n 'padpors.suggest.profile'}}
+        <a href='/users/{{currentUser.username}}/preferences' class='btn btn-primary btn-small'>
+          {{i18n 'padpors.suggest.profile-btn'}}
+        </a>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  {{/if}}
+{{/if}}

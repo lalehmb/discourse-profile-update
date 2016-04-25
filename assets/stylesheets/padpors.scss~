@@ -1,0 +1,25 @@
+.extra-suggests {
+  background-color: white;
+  border-radius: 4px;
+  //box-shadow: 2px 2px 2px #e8e8e8;
+  border: dashed #ccc 1px;
+  width: 228px;
+  float: right;
+  padding: 10px;
+  min-height: 1px;
+  font-size: 13px;
+  position: fixed;
+  margin-right: 800px;
+  margin-top: 40px;
+  z-index: 1;
+}
+.extra-suggests .btn
+{
+  margin-left: 45px;
+  margin-top: 10px;
+  float: right;
+  font-size: 14px;
+  padding: 5px;
+}
+
+
